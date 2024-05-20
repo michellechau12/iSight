@@ -11,6 +11,7 @@
 		DA0427232BF8FA89005BD747 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0427222BF8FA89005BD747 /* ContentView.swift */; };
 		DA0427252BF8FA8A005BD747 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA0427242BF8FA8A005BD747 /* Assets.xcassets */; };
 		DA0427282BF8FA8A005BD747 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA0427272BF8FA8A005BD747 /* Preview Assets.xcassets */; };
+		DA0427592BFB5093005BD747 /* CameraSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0427582BFB5093005BD747 /* CameraSetup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		DA0427222BF8FA89005BD747 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DA0427242BF8FA8A005BD747 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA0427272BF8FA8A005BD747 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DA0427582BFB5093005BD747 /* CameraSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraSetup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				DA0427202BF8FA89005BD747 /* Nano_2_App_NewApp.swift */,
 				DA0427222BF8FA89005BD747 /* ContentView.swift */,
+				DA0427582BFB5093005BD747 /* CameraSetup.swift */,
 				DA0427242BF8FA8A005BD747 /* Assets.xcassets */,
 				DA0427262BF8FA8A005BD747 /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA0427232BF8FA89005BD747 /* ContentView.swift in Sources */,
+				DA0427592BFB5093005BD747 /* CameraSetup.swift in Sources */,
 				DA0427212BF8FA89005BD747 /* Nano_2_App_NewApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,7 +201,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -254,7 +258,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -272,8 +276,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Nano 2 App New/Preview Content\"";
+				DEVELOPMENT_TEAM = 9UQ7N78T5D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to read text for you.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -300,8 +306,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Nano 2 App New/Preview Content\"";
+				DEVELOPMENT_TEAM = 9UQ7N78T5D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to read text for you.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
