@@ -27,7 +27,7 @@ struct ContentView: View {
                         .frame(width: geometry.size.width, height: geometry.size.height)
                         .ignoresSafeArea()
                         .overlay (
-                        
+                            
                             // Floating button stop/play
                             HStack {
                                 Spacer()
@@ -46,10 +46,10 @@ struct ContentView: View {
                                 }
                                 .padding()
                             }
-
-                        
+                            
+                            
                         )
-
+                    
                 }
                 Rectangle()
                     .fill(Color(red: 33 / 255, green: 34 / 255, blue: 36 / 255))
@@ -58,16 +58,13 @@ struct ContentView: View {
                     .overlay(
                         HStack {
                             Spacer()
+                            //button 1
                             Button {
                                 self.selectedButton = .readText
-                                // Perform text detection and speak recognized text
-                                if !isReading {
-                                    speechSynthesizer.speak(text: textRecognizer.recognizedText)
-                                    isReading = true
-                                } else {
-                                    speechSynthesizer.stop()
-                                    isReading = false
-                                }
+                                //speak
+                                speechSynthesizer.speak(text: textRecognizer.recognizedText)
+                                isReading = true
+                                
                             } label: {
                                 VStack {
                                     HStack {
@@ -85,6 +82,8 @@ struct ContentView: View {
                             .foregroundColor(selectedButton == .readText ? .blue : .white)
                             .fontWeight(.bold)
                             Spacer()
+                            
+                            //button 2
                             Button {
                                 self.selectedButton = .readObject
                             } label: {
