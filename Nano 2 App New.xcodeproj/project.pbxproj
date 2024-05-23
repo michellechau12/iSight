@@ -13,7 +13,7 @@
 		DA0427282BF8FA8A005BD747 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA0427272BF8FA8A005BD747 /* Preview Assets.xcassets */; };
 		DA0427592BFB5093005BD747 /* CameraSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0427582BFB5093005BD747 /* CameraSetup.swift */; };
 		DA296E672BFBA27400CD283F /* TextRecognition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA296E662BFBA27400CD283F /* TextRecognition.swift */; };
-		DA296E692BFBB15A00CD283F /* SpeechSynthezier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA296E682BFBB15A00CD283F /* SpeechSynthezier.swift */; };
+		DA296E692BFBB15A00CD283F /* SpeechSynthesizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA296E682BFBB15A00CD283F /* SpeechSynthesizer.swift */; };
 		DA296E6D2BFC4B1A00CD283F /* ObjectDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA296E6C2BFC4B1A00CD283F /* ObjectDetection.swift */; };
 		DA296E6F2BFC4BB700CD283F /* YOLOv3Int8LUT.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = DA296E6E2BFC4BB700CD283F /* YOLOv3Int8LUT.mlmodel */; };
 		DA296E8C2BFF92FF00CD283F /* FeatureButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA296E8B2BFF92FF00CD283F /* FeatureButton.swift */; };
@@ -30,7 +30,7 @@
 		DA0427272BF8FA8A005BD747 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DA0427582BFB5093005BD747 /* CameraSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraSetup.swift; sourceTree = "<group>"; };
 		DA296E662BFBA27400CD283F /* TextRecognition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRecognition.swift; sourceTree = "<group>"; };
-		DA296E682BFBB15A00CD283F /* SpeechSynthezier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechSynthezier.swift; sourceTree = "<group>"; };
+		DA296E682BFBB15A00CD283F /* SpeechSynthesizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechSynthesizer.swift; sourceTree = "<group>"; };
 		DA296E6C2BFC4B1A00CD283F /* ObjectDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDetection.swift; sourceTree = "<group>"; };
 		DA296E6E2BFC4BB700CD283F /* YOLOv3Int8LUT.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = YOLOv3Int8LUT.mlmodel; sourceTree = "<group>"; };
 		DA296E8B2BFF92FF00CD283F /* FeatureButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureButton.swift; sourceTree = "<group>"; };
@@ -121,7 +121,7 @@
 				DA0427582BFB5093005BD747 /* CameraSetup.swift */,
 				DA296E662BFBA27400CD283F /* TextRecognition.swift */,
 				DA296E6C2BFC4B1A00CD283F /* ObjectDetection.swift */,
-				DA296E682BFBB15A00CD283F /* SpeechSynthezier.swift */,
+				DA296E682BFBB15A00CD283F /* SpeechSynthesizer.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -204,7 +204,7 @@
 				DA296E942BFF985900CD283F /* SectionView.swift in Sources */,
 				DA296E8E2BFF934D00CD283F /* PlayStopButton.swift in Sources */,
 				DA296E6F2BFC4BB700CD283F /* YOLOv3Int8LUT.mlmodel in Sources */,
-				DA296E692BFBB15A00CD283F /* SpeechSynthezier.swift in Sources */,
+				DA296E692BFBB15A00CD283F /* SpeechSynthesizer.swift in Sources */,
 				DA0427212BF8FA89005BD747 /* Nano_2_App_NewApp.swift in Sources */,
 				DA296E8C2BFF92FF00CD283F /* FeatureButton.swift in Sources */,
 			);

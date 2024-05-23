@@ -1,5 +1,5 @@
 //
-//  SpeechSynthezier.swift
+//  SpeechSynthesizer.swift
 //  Nano 2 App New
 //
 //  Created by Michelle Chau on 20/05/24.
