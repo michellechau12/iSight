@@ -40,14 +40,14 @@ class TextRecognizer: ObservableObject {
         //get results of the request as VNRecognixedTextObservation objects array
         guard let observations = request.results as? [VNRecognizedTextObservation] else { return }
 
-        var detectedText = ""
+        var texts = ""
         for observation in observations {
             guard let topCandidate = observation.topCandidates(1).first else { continue } //get the top candidate
-            detectedText += topCandidate.string + " "
+            texts += topCandidate.string + " "
         }
 
         DispatchQueue.main.async {
-            self.recognizedText = detectedText
+            self.recognizedText = texts
         }
     }
 }

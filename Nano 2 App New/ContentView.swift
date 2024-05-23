@@ -13,8 +13,6 @@ struct ContentView: View {
     @StateObject var objectDetector = ObjectDetector()
     private let speechSynthesizer = SpeechSynthesizer()
     
-    @State private var isReading = false
-    
     var body: some View {
         VStack(spacing: 0) {
             Rectangle()
@@ -25,20 +23,25 @@ struct ContentView: View {
             GeometryReader { geometry in
                 CameraPreview(textRecognizer: textRecognizer, objectDetector: objectDetector)
                     .overlay (
-                        // floating button stop/play
+                        // stop/play button floating
                         HStack {
                             Spacer()
                             Button(action: {
-                                if isReading {
+                                if speechSynthesizer.isSpeaking {
                                     speechSynthesizer.stop()
-                                    isReading = false
                                 } else {
-                                    isReading = true
-                                    let textToSpeak = selectedButton == .readText ? textRecognizer.recognizedText : objectDetector.detectedObjects.joined(separator: ", ")
+                                    
+                                    let textToSpeak = selectedButton == .readText ? textRecognizer.recognizedText : objectDetector.detectedObjects
+                                    
                                     speechSynthesizer.speak(text: textToSpeak)
+                                    
+                                    if textToSpeak == "" {
+                                        
+                                        speechSynthesizer.speak(text: selectedButton == .readText ? "Tidak menemukan text" : "Tidak menemukan objek")
+                                    }
                                 }
                             }) {
-                                Image(systemName: isReading ? "stop.circle.fill" : "play.circle.fill")
+                                Image(systemName: speechSynthesizer.isSpeaking ? "stop.circle.fill" : "play.circle.fill")
                                     .font(.system(size: 70))
                                     .foregroundColor(.blue)
                             }
@@ -57,16 +60,14 @@ struct ContentView: View {
                         Button {
                             self.selectedButton = .readText
                             speechSynthesizer.stop()
-                            //speak
-                            speechSynthesizer.speak(text: textRecognizer.recognizedText)
-                            isReading = true
+                            speechSynthesizer.speak(text: "Membaca text")
                             
                         } label: {
                             VStack {
                                 HStack {
                                     Image(systemName: "text.viewfinder")
-                                        .font(.system(size: 34))
-                                    Text("Read Text")
+                                        .font(.system(size: 46))
+                                    Text("Baca Teks")
                                         .font(.system(size: 24))
                                 }
                                 if selectedButton == .readText {
@@ -83,15 +84,13 @@ struct ContentView: View {
                         Button {
                             self.selectedButton = .readObject
                             speechSynthesizer.stop()
-                            //speak
-                            speechSynthesizer.speak(text: objectDetector.detectedObjects.joined(separator: ", "))
-                            isReading = true
+                            speechSynthesizer.speak(text: "Deteksi Objek")
                         } label: {
                             VStack {
                                 HStack {
                                     Image(systemName: "dot.circle.viewfinder")
-                                        .font(.system(size: 34))
-                                    Text("Read Object")
+                                        .font(.system(size: 46))
+                                    Text("Deteksi Objek")
                                         .font(.system(size: 24))
                                 }
                                 if selectedButton == .readObject {

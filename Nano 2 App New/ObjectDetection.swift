@@ -11,7 +11,7 @@ import CoreImage
 
 class ObjectDetector: ObservableObject {
     private var requests = [VNRequest]()
-    @Published var detectedObjects: [String] = []
+    @Published var detectedObjects: String = ""
     
     init() {
         setupModel()
@@ -46,11 +46,12 @@ class ObjectDetector: ObservableObject {
     private func handleDetectedObjects(request: VNRequest, error: Error?) {
         guard let results = request.results as? [VNRecognizedObjectObservation] else {return} //extracts the detection results from the request
         
-        var objects = [String]()
+        var objects = ""
         for observation in results {
             if let topLabel = observation.labels.first { //retrieves the top label of dtected objects
-                objects.append(topLabel.identifier)
+                objects += topLabel.identifier + ", "
             }
+            
         }
         
         DispatchQueue.main.async {
