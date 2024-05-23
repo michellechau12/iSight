@@ -27,7 +27,6 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
     private let captureSession = AVCaptureSession()
     private let sessionQueue = DispatchQueue(label: "sessionQueue")
     private var previewLayer = AVCaptureVideoPreviewLayer()
-//    var screenRect: CGRect! = nil // For view dimension
     var screenRect: CGRect = .zero // Initialize to a default value
     
     var textRecognizer: TextRecognizer?
