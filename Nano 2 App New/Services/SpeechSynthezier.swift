@@ -7,7 +7,7 @@
 
 import AVFoundation
 
-class SpeechSynthesizer: NSObject, AVSpeechSynthesizerDelegate {
+class SpeechSynthesizer: NSObject, ObservableObject, AVSpeechSynthesizerDelegate {
     private let synthesizer = AVSpeechSynthesizer()
     @Published var isSpeaking: Bool = false
     
@@ -20,8 +20,8 @@ class SpeechSynthesizer: NSObject, AVSpeechSynthesizerDelegate {
         let utterance = AVSpeechUtterance(string: text)
         utterance.voice = AVSpeechSynthesisVoice(language: "id-ID")
         synthesizer.speak(utterance)
-        
         isSpeaking = true
+        
     }
     
     func stop() {

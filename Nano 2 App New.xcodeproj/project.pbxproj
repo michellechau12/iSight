@@ -16,6 +16,10 @@
 		DA296E692BFBB15A00CD283F /* SpeechSynthezier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA296E682BFBB15A00CD283F /* SpeechSynthezier.swift */; };
 		DA296E6D2BFC4B1A00CD283F /* ObjectDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA296E6C2BFC4B1A00CD283F /* ObjectDetection.swift */; };
 		DA296E6F2BFC4BB700CD283F /* YOLOv3Int8LUT.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = DA296E6E2BFC4BB700CD283F /* YOLOv3Int8LUT.mlmodel */; };
+		DA296E8C2BFF92FF00CD283F /* FeatureButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA296E8B2BFF92FF00CD283F /* FeatureButton.swift */; };
+		DA296E8E2BFF934D00CD283F /* PlayStopButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA296E8D2BFF934D00CD283F /* PlayStopButton.swift */; };
+		DA296E902BFF938400CD283F /* SelectedFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA296E8F2BFF938400CD283F /* SelectedFeature.swift */; };
+		DA296E942BFF985900CD283F /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA296E932BFF985900CD283F /* SectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +33,10 @@
 		DA296E682BFBB15A00CD283F /* SpeechSynthezier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechSynthezier.swift; sourceTree = "<group>"; };
 		DA296E6C2BFC4B1A00CD283F /* ObjectDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDetection.swift; sourceTree = "<group>"; };
 		DA296E6E2BFC4BB700CD283F /* YOLOv3Int8LUT.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = YOLOv3Int8LUT.mlmodel; sourceTree = "<group>"; };
+		DA296E8B2BFF92FF00CD283F /* FeatureButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureButton.swift; sourceTree = "<group>"; };
+		DA296E8D2BFF934D00CD283F /* PlayStopButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayStopButton.swift; sourceTree = "<group>"; };
+		DA296E8F2BFF938400CD283F /* SelectedFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedFeature.swift; sourceTree = "<group>"; };
+		DA296E932BFF985900CD283F /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,14 +70,13 @@
 			isa = PBXGroup;
 			children = (
 				DA0427202BF8FA89005BD747 /* Nano_2_App_NewApp.swift */,
-				DA0427222BF8FA89005BD747 /* ContentView.swift */,
+				DA296E6E2BFC4BB700CD283F /* YOLOv3Int8LUT.mlmodel */,
+				DA296E882BFF92A600CD283F /* Screens */,
+				DA296E872BFF929D00CD283F /* Components */,
+				DA2A2A6A2BFFA3B000FA9560 /* Services */,
+				DA296E862BFF928A00CD283F /* Helper */,
 				DA0427242BF8FA8A005BD747 /* Assets.xcassets */,
 				DA0427262BF8FA8A005BD747 /* Preview Content */,
-				DA0427582BFB5093005BD747 /* CameraSetup.swift */,
-				DA296E662BFBA27400CD283F /* TextRecognition.swift */,
-				DA296E6C2BFC4B1A00CD283F /* ObjectDetection.swift */,
-				DA296E682BFBB15A00CD283F /* SpeechSynthezier.swift */,
-				DA296E6E2BFC4BB700CD283F /* YOLOv3Int8LUT.mlmodel */,
 			);
 			path = "Nano 2 App New";
 			sourceTree = "<group>";
@@ -80,6 +87,43 @@
 				DA0427272BF8FA8A005BD747 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DA296E862BFF928A00CD283F /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				DA296E8F2BFF938400CD283F /* SelectedFeature.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		DA296E872BFF929D00CD283F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				DA296E932BFF985900CD283F /* SectionView.swift */,
+				DA296E8D2BFF934D00CD283F /* PlayStopButton.swift */,
+				DA296E8B2BFF92FF00CD283F /* FeatureButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		DA296E882BFF92A600CD283F /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				DA0427222BF8FA89005BD747 /* ContentView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		DA2A2A6A2BFFA3B000FA9560 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DA0427582BFB5093005BD747 /* CameraSetup.swift */,
+				DA296E662BFBA27400CD283F /* TextRecognition.swift */,
+				DA296E6C2BFC4B1A00CD283F /* ObjectDetection.swift */,
+				DA296E682BFBB15A00CD283F /* SpeechSynthezier.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,13 +196,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA296E902BFF938400CD283F /* SelectedFeature.swift in Sources */,
 				DA296E6D2BFC4B1A00CD283F /* ObjectDetection.swift in Sources */,
 				DA0427232BF8FA89005BD747 /* ContentView.swift in Sources */,
 				DA0427592BFB5093005BD747 /* CameraSetup.swift in Sources */,
 				DA296E672BFBA27400CD283F /* TextRecognition.swift in Sources */,
+				DA296E942BFF985900CD283F /* SectionView.swift in Sources */,
+				DA296E8E2BFF934D00CD283F /* PlayStopButton.swift in Sources */,
 				DA296E6F2BFC4BB700CD283F /* YOLOv3Int8LUT.mlmodel in Sources */,
 				DA296E692BFBB15A00CD283F /* SpeechSynthezier.swift in Sources */,
 				DA0427212BF8FA89005BD747 /* Nano_2_App_NewApp.swift in Sources */,
+				DA296E8C2BFF92FF00CD283F /* FeatureButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
