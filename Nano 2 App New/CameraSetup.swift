@@ -10,10 +10,12 @@ import AVFoundation
 
 struct CameraPreview: UIViewControllerRepresentable {
     var textRecognizer: TextRecognizer
+    var objectDetector: ObjectDetector
 
     func makeUIViewController(context: Context) -> UIViewController {
         let cameraViewController = CameraViewController()
         cameraViewController.textRecognizer = textRecognizer
+        cameraViewController.objectDetector = objectDetector
         return cameraViewController
     }
 
@@ -25,9 +27,12 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
     private let captureSession = AVCaptureSession()
     private let sessionQueue = DispatchQueue(label: "sessionQueue")
     private var previewLayer = AVCaptureVideoPreviewLayer()
-    var screenRect: CGRect! = nil // For view dimension
+//    var screenRect: CGRect! = nil // For view dimension
+    var screenRect: CGRect = .zero // Initialize to a default value
+    
     var textRecognizer: TextRecognizer?
-
+    var objectDetector: ObjectDetector?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         checkPermission()
@@ -104,7 +109,10 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
         }
     }
 
+    // func that notifies the delegate that a new video frame was written
+    // to perform text recognition & object detection based on the output/frame
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
         textRecognizer?.recognizeText(from: sampleBuffer)
+        objectDetector?.detectObjects(from: sampleBuffer)
     }
 }
