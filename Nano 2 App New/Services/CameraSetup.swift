@@ -8,7 +8,7 @@ import UIKit
 import SwiftUI
 import AVFoundation
 
-struct CameraPreview: UIViewControllerRepresentable {
+struct CameraView: UIViewControllerRepresentable {
     var textRecognizer: TextRecognizer
     var objectDetector: ObjectDetector
 

@@ -1,5 +1,5 @@
 //
-//  ObjectDetection.swift
+//  ObjectDetector.swift
 //  Nano 2 App New
 //
 //  Created by Michelle Chau on 21/05/24.

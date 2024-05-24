@@ -18,7 +18,7 @@ struct ContentView: View {
             SectionView(height: 50)
             
             GeometryReader { geometry in
-                CameraPreview(
+                CameraView(
                     textRecognizer: textRecognizer,
                     objectDetector: objectDetector)
                 .overlay (
