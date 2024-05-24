@@ -23,7 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DA04271D2BF8FA89005BD747 /* Nano 2 App New.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nano 2 App New.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA04271D2BF8FA89005BD747 /* iSight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA0427202BF8FA89005BD747 /* Nano_2_App_NewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nano_2_App_NewApp.swift; sourceTree = "<group>"; };
 		DA0427222BF8FA89005BD747 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DA0427242BF8FA8A005BD747 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -61,7 +61,7 @@
 		DA04271E2BF8FA89005BD747 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DA04271D2BF8FA89005BD747 /* Nano 2 App New.app */,
+				DA04271D2BF8FA89005BD747 /* iSight.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,7 +143,7 @@
 			);
 			name = "Nano 2 App New";
 			productName = "Nano 2 App New";
-			productReference = DA04271D2BF8FA89005BD747 /* Nano 2 App New.app */;
+			productReference = DA04271D2BF8FA89005BD747 /* iSight.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -270,6 +270,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = iSight;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -326,6 +327,7 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = iSight;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
@@ -343,7 +345,7 @@
 				DEVELOPMENT_TEAM = 9UQ7N78T5D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to read text for you.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to detect text and objects for you.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -355,7 +357,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Michelle.Nano-2-App-New";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = iSight;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -373,7 +375,7 @@
 				DEVELOPMENT_TEAM = 9UQ7N78T5D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to read text for you.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to detect text and objects for you.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -385,7 +387,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Michelle.Nano-2-App-New";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = iSight;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

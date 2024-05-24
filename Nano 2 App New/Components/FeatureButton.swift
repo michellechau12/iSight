@@ -30,7 +30,7 @@ struct FeatureButton: View {
                 }
             }
         }
-        .foregroundColor(isSelected ? .green : .white)
+        .foregroundColor(isSelected ? Color(.primaryGreen) : .white)
         .fontWeight(.bold)
     }
 }

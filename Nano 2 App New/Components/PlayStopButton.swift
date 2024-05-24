@@ -39,7 +39,7 @@ struct PlayStopButton: View {
                 Image(systemName: speechSynthesizer.isSpeaking ? "stop.circle.fill" : "play.circle.fill")
                     .symbolRenderingMode(.multicolor)
                     .font(.system(size: 100))
-                    .foregroundColor(speechSynthesizer.isSpeaking ? .red : .green)
+                    .foregroundColor(speechSynthesizer.isSpeaking ? .red : Color(.primaryGreen))
             }
             .padding()
         }
