@@ -27,7 +27,17 @@ struct PlayStopButton: View {
                 if speechSynthesizer.isSpeaking {
                     speechSynthesizer.stop()
                 } else {
-                    let textToSpeak = selectedFeature == .readText ? textRecognizer.recognizedText : objectDetector.detectedObjects
+                    /*let textToSpeak = selectedFeature == .readText ? textRecognizer.recognizedText : objectDetector.detectedObjects*/
+                    //TODO: - maybe bisa dijadiin switch case supaya lebih keliatan ini condition
+                    
+                    let textToSpeak: String
+                    
+                    switch selectedFeature {
+                    case .readText:
+                        textToSpeak = textRecognizer.recognizedText
+                    case .readObject:
+                        textToSpeak =  objectDetector.detectedObjects
+                    }
                     
                     speechSynthesizer.speak(text: textToSpeak)
                     
