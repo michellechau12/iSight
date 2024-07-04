@@ -12,15 +12,31 @@
 		DA0427252BF8FA8A005BD747 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA0427242BF8FA8A005BD747 /* Assets.xcassets */; };
 		DA0427282BF8FA8A005BD747 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA0427272BF8FA8A005BD747 /* Preview Assets.xcassets */; };
 		DA0427592BFB5093005BD747 /* CameraSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0427582BFB5093005BD747 /* CameraSetup.swift */; };
+		DA296E672BFBA27400CD283F /* TextRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA296E662BFBA27400CD283F /* TextRecognizer.swift */; };
+		DA296E692BFBB15A00CD283F /* SpeechSynthesizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA296E682BFBB15A00CD283F /* SpeechSynthesizer.swift */; };
+		DA296E6D2BFC4B1A00CD283F /* ObjectDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA296E6C2BFC4B1A00CD283F /* ObjectDetector.swift */; };
+		DA296E6F2BFC4BB700CD283F /* YOLOv3Int8LUT.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = DA296E6E2BFC4BB700CD283F /* YOLOv3Int8LUT.mlmodel */; };
+		DA296E8C2BFF92FF00CD283F /* FeatureButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA296E8B2BFF92FF00CD283F /* FeatureButton.swift */; };
+		DA296E8E2BFF934D00CD283F /* PlayStopButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA296E8D2BFF934D00CD283F /* PlayStopButton.swift */; };
+		DA296E902BFF938400CD283F /* SelectedFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA296E8F2BFF938400CD283F /* SelectedFeature.swift */; };
+		DA296E942BFF985900CD283F /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA296E932BFF985900CD283F /* SectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DA04271D2BF8FA89005BD747 /* Nano 2 App New.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nano 2 App New.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA04271D2BF8FA89005BD747 /* iSight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA0427202BF8FA89005BD747 /* Nano_2_App_NewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nano_2_App_NewApp.swift; sourceTree = "<group>"; };
 		DA0427222BF8FA89005BD747 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DA0427242BF8FA8A005BD747 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA0427272BF8FA8A005BD747 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DA0427582BFB5093005BD747 /* CameraSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraSetup.swift; sourceTree = "<group>"; };
+		DA296E662BFBA27400CD283F /* TextRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRecognizer.swift; sourceTree = "<group>"; };
+		DA296E682BFBB15A00CD283F /* SpeechSynthesizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechSynthesizer.swift; sourceTree = "<group>"; };
+		DA296E6C2BFC4B1A00CD283F /* ObjectDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDetector.swift; sourceTree = "<group>"; };
+		DA296E6E2BFC4BB700CD283F /* YOLOv3Int8LUT.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = YOLOv3Int8LUT.mlmodel; sourceTree = "<group>"; };
+		DA296E8B2BFF92FF00CD283F /* FeatureButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureButton.swift; sourceTree = "<group>"; };
+		DA296E8D2BFF934D00CD283F /* PlayStopButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayStopButton.swift; sourceTree = "<group>"; };
+		DA296E8F2BFF938400CD283F /* SelectedFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedFeature.swift; sourceTree = "<group>"; };
+		DA296E932BFF985900CD283F /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +61,7 @@
 		DA04271E2BF8FA89005BD747 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DA04271D2BF8FA89005BD747 /* Nano 2 App New.app */,
+				DA04271D2BF8FA89005BD747 /* iSight.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,8 +70,11 @@
 			isa = PBXGroup;
 			children = (
 				DA0427202BF8FA89005BD747 /* Nano_2_App_NewApp.swift */,
-				DA0427222BF8FA89005BD747 /* ContentView.swift */,
-				DA0427582BFB5093005BD747 /* CameraSetup.swift */,
+				DA296E6E2BFC4BB700CD283F /* YOLOv3Int8LUT.mlmodel */,
+				DA296E882BFF92A600CD283F /* Screens */,
+				DA296E872BFF929D00CD283F /* Components */,
+				DA2A2A6A2BFFA3B000FA9560 /* Services */,
+				DA296E862BFF928A00CD283F /* Helper */,
 				DA0427242BF8FA8A005BD747 /* Assets.xcassets */,
 				DA0427262BF8FA8A005BD747 /* Preview Content */,
 			);
@@ -68,6 +87,43 @@
 				DA0427272BF8FA8A005BD747 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DA296E862BFF928A00CD283F /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				DA296E8F2BFF938400CD283F /* SelectedFeature.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		DA296E872BFF929D00CD283F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				DA296E932BFF985900CD283F /* SectionView.swift */,
+				DA296E8D2BFF934D00CD283F /* PlayStopButton.swift */,
+				DA296E8B2BFF92FF00CD283F /* FeatureButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		DA296E882BFF92A600CD283F /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				DA0427222BF8FA89005BD747 /* ContentView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		DA2A2A6A2BFFA3B000FA9560 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DA0427582BFB5093005BD747 /* CameraSetup.swift */,
+				DA296E662BFBA27400CD283F /* TextRecognizer.swift */,
+				DA296E6C2BFC4B1A00CD283F /* ObjectDetector.swift */,
+				DA296E682BFBB15A00CD283F /* SpeechSynthesizer.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,7 +143,7 @@
 			);
 			name = "Nano 2 App New";
 			productName = "Nano 2 App New";
-			productReference = DA04271D2BF8FA89005BD747 /* Nano 2 App New.app */;
+			productReference = DA04271D2BF8FA89005BD747 /* iSight.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -140,9 +196,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA296E902BFF938400CD283F /* SelectedFeature.swift in Sources */,
+				DA296E6D2BFC4B1A00CD283F /* ObjectDetector.swift in Sources */,
 				DA0427232BF8FA89005BD747 /* ContentView.swift in Sources */,
 				DA0427592BFB5093005BD747 /* CameraSetup.swift in Sources */,
+				DA296E672BFBA27400CD283F /* TextRecognizer.swift in Sources */,
+				DA296E942BFF985900CD283F /* SectionView.swift in Sources */,
+				DA296E8E2BFF934D00CD283F /* PlayStopButton.swift in Sources */,
+				DA296E6F2BFC4BB700CD283F /* YOLOv3Int8LUT.mlmodel in Sources */,
+				DA296E692BFBB15A00CD283F /* SpeechSynthesizer.swift in Sources */,
 				DA0427212BF8FA89005BD747 /* Nano_2_App_NewApp.swift in Sources */,
+				DA296E8C2BFF92FF00CD283F /* FeatureButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +270,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = iSight;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -262,6 +327,7 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = iSight;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
@@ -279,7 +345,7 @@
 				DEVELOPMENT_TEAM = 9UQ7N78T5D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to read text for you.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to detect text and objects for you.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -291,7 +357,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Michelle.Nano-2-App-New";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = iSight;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -309,7 +375,7 @@
 				DEVELOPMENT_TEAM = 9UQ7N78T5D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to read text for you.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to detect text and objects for you.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -321,7 +387,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Michelle.Nano-2-App-New";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = iSight;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
