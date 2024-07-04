@@ -6,7 +6,7 @@
 //
 
 import Vision
-import AVFoundation
+//import AVFoundation
 import CoreImage
 
 class TextRecognizer: ObservableObject {
