@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA01425E2CB8CC60006B1479 /* TestGitSoftDelete.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA01425D2CB8CC60006B1479 /* TestGitSoftDelete.swift */; };
 		DA0427212BF8FA89005BD747 /* Nano_2_App_NewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0427202BF8FA89005BD747 /* Nano_2_App_NewApp.swift */; };
 		DA0427232BF8FA89005BD747 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0427222BF8FA89005BD747 /* ContentView.swift */; };
 		DA0427252BF8FA8A005BD747 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA0427242BF8FA8A005BD747 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA01425D2CB8CC60006B1479 /* TestGitSoftDelete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestGitSoftDelete.swift; sourceTree = "<group>"; };
 		DA04271D2BF8FA89005BD747 /* iSight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA0427202BF8FA89005BD747 /* Nano_2_App_NewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nano_2_App_NewApp.swift; sourceTree = "<group>"; };
 		DA0427222BF8FA89005BD747 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				DA296E8F2BFF938400CD283F /* SelectedFeature.swift */,
+				DA01425D2CB8CC60006B1479 /* TestGitSoftDelete.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				DA296E8E2BFF934D00CD283F /* PlayStopButton.swift in Sources */,
 				DA296E6F2BFC4BB700CD283F /* YOLOv3Int8LUT.mlmodel in Sources */,
 				DA296E692BFBB15A00CD283F /* SpeechSynthesizer.swift in Sources */,
+				DA01425E2CB8CC60006B1479 /* TestGitSoftDelete.swift in Sources */,
 				DA0427212BF8FA89005BD747 /* Nano_2_App_NewApp.swift in Sources */,
 				DA296E8C2BFF92FF00CD283F /* FeatureButton.swift in Sources */,
 			);
